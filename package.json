@@ -2,6 +2,7 @@
   "name": "nextjs",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://DanyloDiachenko.github.io/React-Burgers", 
   "scripts": {
     "dev": "next dev",
     "build": "next build",
