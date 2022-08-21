@@ -2,15 +2,14 @@
   "name": "nextjs",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://DanyloDiachenko.github.io/React-Burgers", 
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "json-server": "json-server --watch db.json --port 5000",
-    "predeploy": "concurrently \"npm run dev\" \"npm run json-server\"",
-    "deploy": "gh-pages -d serve"
+    "serve": "concurrently \"npm run dev\" \"npm run json-server\"",
+    "build-api": "concurrently \"npm run build\" \"npm run json-server\""
   },
   "dependencies": {
     "concurrently": "^7.3.0",
