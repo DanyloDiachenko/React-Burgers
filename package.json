@@ -11,7 +11,7 @@
     "json-server": "json-server --watch db.json --port 5000",
     "serve": "concurrently \"npm run dev\" \"npm run json-server\"",
     "build-server": "concurrently \"npm run build\" \"npm run json-server\"",
-    "start-server": "concurrently \"npm run start\" \"npm run json-server\"",
+    "start-server": "npm run start",
     "predeploy": "concurrently \"npm run build-server\" \"npm run start-server\"",
     "deploy": "gh-pages -d .next"
   },
