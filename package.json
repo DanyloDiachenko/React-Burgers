@@ -9,7 +9,6 @@
     "start": "next start",
     "lint": "next lint",
     "json-server": "json-server --watch db.json --port 5000",
-    "serve": "concurrently \"npm run dev\" \"npm run json-server\"",
     "build-server": "concurrently \"npm run build\" \"npm run json-server\"",
     "predeploy": "concurrently \"npm run build-server\" \"npm run start\"",
     "deploy": "gh-pages -d .next"
