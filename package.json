@@ -1,29 +1,23 @@
 {
-  "name": "nextjs",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "https://DanyloDiachenko.github.io/React-Burgers",
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "json-server": "json-server --watch db.json --port 5000",
-    "build-server": "concurrently \"npm run build\" \"npm run json-server\"",
-    "predeploy": "concurrently \"npm run build-server\" \"npm run start\"",
-    "deploy": "gh-pages -d .next"
-  },
-  "dependencies": {
-    "concurrently": "^7.3.0",
-    "json-server": "^0.17.0",
-    "next": "12.2.5",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-icons": "^4.4.0"
-  },
-  "devDependencies": {
-    "eslint": "8.21.0",
-    "eslint-config-next": "12.2.5",
-    "gh-pages": "^4.0.0"
-  }
+	"name": "react-burgers",
+	"version": "0.1.0",
+	"private": true,
+	"homepage": ".",
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"json-server": "json-server --watch db.json --port 5000",
+		"build-server": "concurrently \"npm run build\" \"npm run json-server\""
+	},
+	"dependencies": {
+		"concurrently": "^7.3.0",
+		"json-server": "^0.17.0",
+		"next": "12.2.5",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"react-icons": "^4.4.0",
+		"sharp": "^0.32.1"
+	},
+	"devDependencies": {}
 }
