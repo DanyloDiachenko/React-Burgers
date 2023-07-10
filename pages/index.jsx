@@ -10,6 +10,7 @@ const Home = () => {
       <Head>
         <title>Жирные Бургеры | Главная</title>
         <meta name="title" content="Жирные бургеры" />
+        <meta name="description" content="Купить вкусные дешевые с доставкой домой" />
       </Head>
 
       <div className={styles.container}>
